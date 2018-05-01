@@ -6,6 +6,7 @@
 OS X & Linux & Windows:
 
 ```sh
+cd blockchain
 npm install
 ```
 
