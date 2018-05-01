@@ -1,0 +1,33 @@
+{{> header}}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">Private Blockchain</a>
+  <div class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" placeholder="Amount" aria-label="amount" id="amount">
+    <button class="btn btn-outline-success my-2 my-sm-0" id="bob">Bob -> Alice</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" id="alice" style="margin-left:10px;">Alice -> Bob</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" id="mine" style="margin-left:10px;">Mine</button>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <span class="navbar-text" style="margin-left: 10px;">
+        Difficulty: <strong>{{difficulty}}</strong> ||
+      </span>
+      <span class="navbar-text" style="margin-left: 10px;">
+        MinerReward: <strong>{{reward}}</strong> ||
+      </span>
+      <span class="navbar-text" style="margin-left: 10px;">
+        MinerWallet: <strong>{{Miner}}</strong> ||
+      </span>
+      <span class="navbar-text" style="margin-left: 10px;">
+        AliceWallet: <strong><span id="alice_wallet">{{Alice}}</span></strong> ||
+      </span>
+      <span class="navbar-text" style="margin-left: 10px;">
+        BobWallet: <strong><span id="bob_wallet">{{Bob}}</span></strong>
+      </span>
+    </div>
+  </div>
+  {{#parseBlocks blocks}}{{/parseBlocks}}
+</div>
+{{> footer}}
