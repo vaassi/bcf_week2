@@ -1,12 +1,6 @@
 # Private blockchain
 > Private unsecured simpe blockchain imlementation.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-NodeJS simple blockchain implementation.
-
 ## Installation
 
 OS X & Linux & Windows:
