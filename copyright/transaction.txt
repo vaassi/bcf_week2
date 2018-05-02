@@ -1,0 +1,6 @@
+// command to make copyright string in blockchain
+eth.sendTransaction({from: eth.accounts[0], to: '0x6680c00054a61f61e76395F8e4D0FcACCA63FA25', value: web3.toWei(0.1, 'ether'), input: web3.fromAscii(' Copyright (c) 2018 Vasily Tupikin x0')})
+
+
+// link to my transaction
+https://rinkeby.etherscan.io/tx/0x68ce6e8f74605ea0de72775eb8c0938274a1802785844233adea7c32fabd48f6
